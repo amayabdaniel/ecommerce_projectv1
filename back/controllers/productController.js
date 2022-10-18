@@ -1,4 +1,5 @@
 const producto = require("../models/productos");
+const fetch = (url) => import ('node-fetch').then(({default: fetch}) => fetch(url));
 
 //Ver la lista de productos
 exports.getProducts = async (req, res, next) => {
