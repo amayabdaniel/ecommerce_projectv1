@@ -1,14 +1,14 @@
 const producto = require("../models/productos");
-const fetch = (url) => import ('node-fetch').then(({default: fetch}) => fetch(url));
+const fetch = (url) => import('node-fetch').then(({ default: fetch }) => fetch(url));
 
 //Ver la lista de productos
 exports.getProducts = async (req, res, next) => {
 
     const productos = await producto.find();
     res.status(200).json({
-      success: true,
-      count: productos.length,
-      productos
+        success: true,
+        count: productos.length,
+        productos
     });
 };
 //ver un producto por id
@@ -85,7 +85,7 @@ function verProductos() {
 }
 //verProductos(); llamamos al metodo para probar la consulta
 function verProductoPorID(id) {
-    fetch("http://localhost:4001/api/products/"+id)
+    fetch("http://localhost:4001/api/products/" + id)
         .then(res => res.json())
         .then(res => console.log(res))
         .catch(err => console.log(err))
