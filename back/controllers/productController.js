@@ -75,3 +75,20 @@ exports.newProduct = async (req, res, next) => {
         product
     });
 };
+
+function verProductos() {
+    fetch("http://localhost:4001/api/products")
+        .then(res => res.json())
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+
+}
+//verProductos(); llamamos al metodo para probar la consulta
+function verProductoPorID(id) {
+    fetch("http://localhost:4001/api/products/"+id)
+        .then(res => res.json())
+        .then(res => console.log(res))
+        .catch(err => console.log(err))
+
+}
+//verProductoPorID(6346b17bf3050e01d6eeeef4); llamamos al metodo para probar la consulta
