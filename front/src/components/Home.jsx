@@ -21,7 +21,7 @@ export const Home = () => {
                                     </div>
                                     <span id="puntaje_producto">5 reviews</span>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='ver_producto' className='btn btn-block'>Ver Detalle del producto</a>
+                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='view_btn' className='btn btn-block'>Ver Detalle del producto</a>
                             </div>
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export const Home = () => {
                                     </div>
                                     <span id="puntaje_producto">5 reviews</span>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='ver_producto' className='btn btn-block'>Ver Detalle del producto</a>
+                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='view_btn' className='btn btn-block'>Ver Detalle del producto</a>
                             </div>
                         </div>
                     </div>
@@ -57,7 +57,7 @@ export const Home = () => {
                                     </div>
                                     <span id="puntaje_producto">5 reviews</span>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='ver_producto' className='btn btn-block'>Ver Detalle del producto</a>
+                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='view_btn' className='btn btn-block'>Ver Detalle del producto</a>
                             </div>
                         </div>
                     </div>
@@ -75,7 +75,7 @@ export const Home = () => {
                                     </div>
                                     <span id="puntaje_producto">5 reviews</span>
                                 </div>
-                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='ver_producto' className='btn btn-block'>Ver Detalle del producto</a>
+                                <p className='card-text'>$72.000</p><a href="http://localhost:3000" id='view_btn' className='btn btn-block'>Ver Detalle del producto</a>
                             </div>
                         </div>
                     </div>
