@@ -1,6 +1,6 @@
-import { ALL_PRODUCTS_FAIL, ALL_PRODUCTS_REQUEST, ALL_PRODUCTS_SUCCESS, CLEAR_ERRORS, PRODUCT_DETAILS_FAIL, PRODUCT_DETAILS_REQUEST, PRODUCT_DETAILS_SUCCESS } from "../constants/productConstants";
+import { ALL_PRODUCTS_FAIL, ALL_PRODUCTS_REQUEST, ALL_PRODUCTS_SUCCESS, CLEAR_ERRORS } from "../constants/productConstants";
 
-export const productsReducer = ({ state = { products: [] }, action }) => {
+export const productsReducer = ( state = { products: [] }, action ) => {
     switch (action.type) {
         case ALL_PRODUCTS_REQUEST:
             return {
