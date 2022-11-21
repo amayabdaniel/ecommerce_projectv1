@@ -4,6 +4,7 @@ import Header from './components/layouts/Header';
 import Home from './components/Home';
 import Footer from './components/layouts/Footer';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import ProductDetails from './components/products/ProductDetails';
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <div className="container container-fluid">
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/product/:id" element={<ProductDetails />} />
           </Routes>
         </div>
         <Footer />
