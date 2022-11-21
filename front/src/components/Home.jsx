@@ -3,18 +3,25 @@ import MetaData from './layouts/MetaData';
 import { useDispatch, useSelector } from 'react-redux';
 import { getProducts } from '../actions/productActions';
 import { Link } from "react-router-dom";
+import { useAlert } from 'react-alert';
 
 export const Home = () => {
 
     const { loading, products, error } = useSelector((state) => state.products);
+    const alert = useAlert();
 
     const dispatch = useDispatch();
     useEffect(() => {
+        if (error) {
+            return alert.error(error);
+        }
+
         dispatch(getProducts());
+        alert.success("OK")
     }, [dispatch]);
     return (
         <Fragment>
-            {loading ? <h1>Cargando...</h1> : (
+            {loading ? <i class="fa fa-spinner fa-spin"></i> : (
                 <Fragment>
                     <MetaData title="Lo mejor para tu mascota"></MetaData>
                     <h1 id="encabezado_productos">Últimos Productos</h1>
